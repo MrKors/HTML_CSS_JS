@@ -5,13 +5,32 @@
     <title>Авторизация</title>
 </head>
 <body>
-    <form action="#" enctype="multipart/form-data" method="post" autocomplete="on" name="Авторизация">
-        <fieldset name="Авторизация">
-            <legend align="center">Авторизация</legend>
-            <label>Логин:
-                <input type="text" required minlength="6" maxlength="15">
-            </label>
-        </fieldset>
-    </form>
+    <div>
+        <form id="LoginForm" action="#" enctype="multipart/form-data" method="post" autocomplete="on" name="Авторизация">
+            <fieldset name="Авторизация">
+                <legend align="center">Авторизация</legend>
+                <p>
+                    <label for="inputEmail">Email:</label>
+                    <input id="inputEmail" type="email" required>
+                </p>
+
+                <p>
+                    <label for="inputPassword">Пароль:</label>
+                    <input  id="inputPassword" type="password" required minlength="8" maxlength="30">
+                </p>
+
+                <p>
+                    <a href="#">Забыли пароль?</a>
+                </p>
+
+                <p>
+<!--                    <input type="submit">-->
+                    <button name="LoginOK" type="submit" form="LoginForm" formmethod="post"><i>Войти</i></button>
+                    <button name="LoginClear" type="reset"><i>Сброс</i></button>
+                </p>
+
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
