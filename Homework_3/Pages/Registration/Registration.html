@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <div>
+        <form id="RegForm" action="#" method="post" enctype="multipart/form-data" autocomplete="on" name="Регистрация">
+            <fieldset name="Регистрация">
+                <legend align="center"><b>Регистрация</b></legend>
+
+                <table align="center">
+                    <tbody>
+                        <tr align="center">
+                            <td colspan="2"><img src="../../image/anonAvatar.png" alt="не удалось загрузить картинку">
+                            <br><input type="file" accept="image/*" name="Avatar"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="inputLogin">Логин:</label></td>
+                                <td><input id="inputLogin" type="text" required></td>
+                        </tr>
+                        <tr>
+                                <td><label for="inputPassword">Пароль:</label></td>
+                                <td><input  id="inputPassword" type="password" required minlength="8" maxlength="30"></td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label for="acceptPassword">Подтверждение пароля:</label></td>
+                            <td><input  id="acceptPassword" type="password" required minlength="8" maxlength="30"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="inputEmail">Email:</label></td>
+                            <td><input id="inputEmail" type="email" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="inputFirstName">Имя:</label></td>
+                            <td><input id="inputFirstName" type="text" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="inputLastName">Фамилия:</label></td>
+                            <td><input id="inputLastName" type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Пол:</label></td>
+                            <td><label><input type="radio" name="gender" required>Мужской</label>
+                            <label><input type="radio" name="gender" required>Женский</label></td>
+                        </tr>
+
+                         <tr align="center">
+                            <td colspan="2"><button name="LoginOK" type="submit" form="RegForm" formmethod="post"><i>Зарегестрироваться</i></button>
+                            <button name="LoginClear" type="reset"><i>Очистить</i></button></td>
+                         </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
