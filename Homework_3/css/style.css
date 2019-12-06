@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #3399ff;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin: 0px;
 }
 
@@ -19,25 +19,38 @@ ul, li {
     padding: 0px;
     margin: 0px;
 }
-nav {
-    display: inline-block;
-    list-style-type: none;
-}
+/*nav {*/
+/*    display: inline-block;*/
+/*    list-style-type: none;*/
+/*}*/
 
 .navItem {
     font-size: 25px;
     padding-left: 15px;
+    padding-right: 10px;
 }
+
 .navItem a:hover {
     border: 1px solid #A52A2A;
+    border-radius: 5px;
+    padding: 5px;
     color: #A52A2A;
 }
+
 .navLink, a{
     color: black;
     text-decoration: none;
 }
 
+.active {
+    color: #A52A2A;
+}
+
 #logo {
     weigth: 30px;
     height: 30px;
+}
+
+#RegForm {
+    background-color: rgba(51, 153, 255, .8);
 }
